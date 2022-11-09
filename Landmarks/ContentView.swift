@@ -9,13 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .leading) {
+            Text("Turtle Rock")
+                .font(.title)
+                .foregroundColor(.blue)
+            HStack {
+                Text("Joshua Tree National Park")
+                    .font(.subheadline)
+                Spacer()
+                Text("California")
+                    .font(.subheadline)
+            }
+            .background(.green)
         }
+        .background(.pink)
         .padding()
+        
     }
 }
 
