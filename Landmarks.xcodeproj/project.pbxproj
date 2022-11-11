@@ -22,6 +22,7 @@
 		06234BAD291D732A00DEBF21 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06234BAC291D732A00DEBF21 /* LandmarkRow.swift */; };
 		06234BAF291D7CD100DEBF21 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06234BAE291D7CD100DEBF21 /* LandmarkList.swift */; };
 		06234BB1291D7EAC00DEBF21 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06234BB0291D7EAC00DEBF21 /* LandmarkDetail.swift */; };
+		06ADE396291EC501006910BD /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ADE395291EC501006910BD /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		06234BAC291D732A00DEBF21 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		06234BAE291D7CD100DEBF21 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		06234BB0291D7EAC00DEBF21 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		06ADE395291EC501006910BD /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +112,8 @@
 		060580FB291C349500C3EF40 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
-				06234BAA291D72AE00DEBF21 /* Resources */,
 				060580FC291C349500C3EF40 /* LandmarksApp.swift */,
+				06234BAA291D72AE00DEBF21 /* Resources */,
 				06234BA9291D729B00DEBF21 /* Views */,
 				06234BAB291D72CF00DEBF21 /* Model */,
 				06058100291C349500C3EF40 /* Assets.xcassets */,
@@ -148,12 +150,9 @@
 		06234BA9291D729B00DEBF21 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				06234B9D291D338C00DEBF21 /* CircleImage.swift */,
 				060580FE291C349500C3EF40 /* ContentView.swift */,
-				06234B9F291D375B00DEBF21 /* MapView.swift */,
-				06234BAC291D732A00DEBF21 /* LandmarkRow.swift */,
-				06234BAE291D7CD100DEBF21 /* LandmarkList.swift */,
-				06234BB0291D7EAC00DEBF21 /* LandmarkDetail.swift */,
+				06ADE398291EC69E006910BD /* Helpers */,
+				06ADE397291EC67A006910BD /* Landmarks */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +172,26 @@
 				06234BA5291D6C0800DEBF21 /* ModelData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		06ADE397291EC67A006910BD /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				06234BAC291D732A00DEBF21 /* LandmarkRow.swift */,
+				06234BAE291D7CD100DEBF21 /* LandmarkList.swift */,
+				06234BB0291D7EAC00DEBF21 /* LandmarkDetail.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		06ADE398291EC69E006910BD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				06234B9D291D338C00DEBF21 /* CircleImage.swift */,
+				06234B9F291D375B00DEBF21 /* MapView.swift */,
+				06ADE395291EC501006910BD /* FavoriteButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +328,7 @@
 				060580FF291C349500C3EF40 /* ContentView.swift in Sources */,
 				06234BA0291D375B00DEBF21 /* MapView.swift in Sources */,
 				060580FD291C349500C3EF40 /* LandmarksApp.swift in Sources */,
+				06ADE396291EC501006910BD /* FavoriteButton.swift in Sources */,
 				06234BAF291D7CD100DEBF21 /* LandmarkList.swift in Sources */,
 				06234BB1291D7EAC00DEBF21 /* LandmarkDetail.swift in Sources */,
 				06234B9E291D338C00DEBF21 /* CircleImage.swift in Sources */,
@@ -470,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
@@ -488,6 +509,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jrtv-projects.Landmarks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
@@ -517,6 +540,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jrtv-projects.Landmarks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
